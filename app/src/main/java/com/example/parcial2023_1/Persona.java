@@ -1,7 +1,9 @@
 package com.example.parcial2023_1;
 
-public class Persona {
+import java.util.HashMap;
 
+public class Persona {
+/*
     String Usuario;
     String Contrasena;
 
@@ -13,4 +15,6 @@ public class Persona {
 
         return edad;
     }
+*/
+
 }

@@ -19,6 +19,7 @@ public class DbHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
         sqLiteDatabase.execSQL("CREATE TABLE " + TABLE_AMIGO + "(" +
+                "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 "NOMBRE TEXT NOT NULL," +
                 "EDAD TEXT NOT NULL," +
                 "CIUDAD TEXT NOT NULL )");

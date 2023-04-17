@@ -20,6 +20,7 @@ public class DbAmigo extends DbHelper {
 
     public long insertarAmigo  (String nombre, String edad, String ciudad) {
 
+
         long id = 0;
 
         try {

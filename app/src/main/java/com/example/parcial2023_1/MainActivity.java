@@ -38,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
         
 
         Persona datos = new Persona();
-        datos.Persona();
+       // datos.Persona();
 
         String us = "Sergio";     // datos de usuario
         String cna = "123hola";   // datos de la contrasena
         
-        if ( nombreusuario != "hola"  && contraseñaU != "hola"){
+        if ( us.equals(nombreusuario)  && cna.equals(contraseñaU)){
             startActivity(siguiente);
 
 
