@@ -5,6 +5,8 @@ plugins {
 android {
     namespace 'com.example.parcial2023_1'
     compileSdk 33
+    useLibrary 'android.test.runner'
+    useLibrary 'android.test.base'
 
     defaultConfig {
         applicationId "com.example.parcial2023_1"
@@ -34,38 +36,13 @@ dependencies {
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    buildscript {
-        repositories {
-            // Make sure that you have the following two repositories
-            google()  // Google's Maven repository
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
 
-            mavenCentral()  // Maven Central repository
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+    androidTestImplementation 'androidx.test:rules:1.4.0'
 
-        }
-        dependencies {
-
-            // Add the dependency for the Google services Gradle plugin
-            classpath 'com.google.gms:google-services:4.3.15'
-            // Import the BoM for the Firebase platform
-            implementation platform('com.google.firebase:firebase-bom:31.4.0')
-
-            // Add the dependency for the Performance Monitoring library
-            // When using the BoM, you don't specify versions in Firebase library dependencies
-            implementation 'com.google.firebase:firebase-perf'
-
-        }
-    }
-
-    allprojects {
-
-        repositories {
-            // Make sure that you have the following two repositories
-            google()  // Google's Maven repository
-
-            mavenCentral()  // Maven Central repository
-
-        }
-    }
 }

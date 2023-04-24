@@ -31,6 +31,10 @@ public class MainActivity2 extends AppCompatActivity {
         guardar = findViewById(R.id.registrar);
 
         crearBD = findViewById(R.id.crearbd);
+
+
+
+
         crearBD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +58,7 @@ public class MainActivity2 extends AppCompatActivity {
                 long id = dbAmigos.insertarAmigo(nombre.getText().toString(),edad.getText().toString(),ciudad.getText().toString());
 
                 if (id >  0){
-                    Toast.makeText(MainActivity2.this, "Registro guardado", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity2.this, "Registro guardado" , Toast.LENGTH_SHORT).show();
                     limpiar();
                 }else{
                     Toast.makeText(MainActivity2.this, "No se guardo el registro", Toast.LENGTH_SHORT).show();
@@ -63,6 +67,26 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
+        /*int año_actual = 2023;
+
+        int valor = Integer.parseInt(edad.getText().toString());
+
+        Año_de_nacimiento calculadora = new Año_de_nacimiento();
+        int prueba = calculadora.Año_de_nacimiento(año_actual,valor);
+
+        System.out.println("El año de nacimiento es: "+prueba);*/
+
+    }
+
+    public  void edad1(){
+        int año_actual = 2023;
+
+        int valor = Integer.parseInt(edad.getText().toString());
+
+        Año_de_nacimiento calculadora = new Año_de_nacimiento();
+        int prueba = calculadora.Año_de_nacimiento(año_actual,valor);
+
+        System.out.println("El año de nacimiento es: "+prueba);
     }
 
 
